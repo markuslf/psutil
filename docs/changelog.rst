@@ -414,9 +414,6 @@ Reorganization of process memory APIs (:gh:`2731`, :gh:`2736`, :gh:`2733`,
 - :gh:`2941`, [Windows]: :func:`net_io_counters` raised :exc:`RuntimeError`,
   losing the counters of all the other NICs, if a NIC was disabled or unplugged
   mid-call. Now it's skipped.
-- :gh:`3002`, [Windows]: :func:`disk_io_counters` returned :field:`read_time`
-  and :field:`write_time` in seconds instead of milliseconds. They are now 1000
-  times larger, matching the documentation.
 
 **Bug fixes: macOS**
 
